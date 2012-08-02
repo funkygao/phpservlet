@@ -48,7 +48,7 @@
  * vim: set sw=4 ts=4 et:
  */
 
-require_once('/kx/tests/KxTestCaseBase.php');
+require_once('DHttp_TestBase.php');
 
 class MyKHttp_Middleware_Profiler extends KHttp_Middleware_Profiler
 {

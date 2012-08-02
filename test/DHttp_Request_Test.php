@@ -12,7 +12,7 @@
  * @todo testGetArray
  */
 
-require_once('/kx/tests/KxTestCaseBase.php');
+require_once('DHttp_TestBase.php');
 
 // avoid 'Headers already sent' error
 ob_start();

@@ -10,7 +10,7 @@
  * vim: set sw=4 ts=4 et:
  */
 
-require_once('/kx/tests/KxTestCaseBase.php');
+require_once('DHttp_TestBase.php');
 
 class KHttp_Config_Default_Test extends KxTestCaseBase
 {

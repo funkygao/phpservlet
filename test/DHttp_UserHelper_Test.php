@@ -13,7 +13,7 @@
  * @todo isStar的返回值不大理解
  */
 
-require_once('/kx/tests/KxTestCaseBase.php');
+require_once('DHttp_TestBase.php');
 
 class DHttp_UserHelper_Test extends KxTestCaseBase implements DHttp_Constant
 {
