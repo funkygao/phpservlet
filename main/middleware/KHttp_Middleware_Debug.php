@@ -17,8 +17,7 @@ class KHttp_Middleware_Debug extends DHttp_Interceptor
 
     private function _isXhprofEnabled()
     {
-        return DHttp_Debug::isDebugTurnedOn(self::REQ_PARAM_DEBUG_XHPROF)
-            && function_exists('xhprof_enable');
+        return function_exists('xhprof_enable');
     }
 
     protected function _before(DHttp_Request $req, DHttp_Response $res)
@@ -37,6 +36,7 @@ class KHttp_Middleware_Debug extends DHttp_Interceptor
             // profiler ends here
             $xhprof_data = xhprof_disable();
 
+            // modify as your context
             $xhprofRoot = ROOT_DIR . 'htdocs/prof/xhprof_lib/utils/';
             include_once $xhprofRoot . 'xhprof_lib.php';
             include_once $xhprofRoot . 'xhprof_runs.php';
@@ -46,7 +46,7 @@ class KHttp_Middleware_Debug extends DHttp_Interceptor
 
             // append to http body
             $res->write('<br/>');
-            $res->write("<a href='/test/xhprof_html/index.php?run=$run_id&source=txt'>xhprof</a>");
+            $res->write("<a href='/test/xhprof_html/index.php?run=$run_id&source=txt'>xhprof result</a>");
         }
 
     }
