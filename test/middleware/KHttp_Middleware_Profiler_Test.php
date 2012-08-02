@@ -74,7 +74,7 @@ class MyKHttp_Middleware_Profiler extends KHttp_Middleware_Profiler
 
 }
 
-class KHttp_Middleware_Profiler_Test extends KxTestCaseBase
+class KHttp_Middleware_Profiler_Test extends DHttp_TestBase
 {
 
     /**

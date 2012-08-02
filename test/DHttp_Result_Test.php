@@ -31,7 +31,7 @@ class ResultClassForTest implements DHttp_Result
 
 }
 
-class DHttp_Result_Test extends KxTestCaseBase
+class DHttp_Result_Test extends DHttp_TestBase
 {
 
     public function testResultTypes()

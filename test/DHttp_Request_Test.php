@@ -17,7 +17,7 @@ require_once('DHttp_TestBase.php');
 // avoid 'Headers already sent' error
 ob_start();
 
-class DHttp_Request_Test extends KxTestCaseBase
+class DHttp_Request_Test extends DHttp_TestBase
 {
 
     const MT_RAND_VALUE = 963932192;

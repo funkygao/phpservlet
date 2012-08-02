@@ -22,7 +22,7 @@ class MyConfigForTest extends DHttp_Config
     
 }
 
-class DHttp_Config_Test extends KxTestCaseBase
+class DHttp_Config_Test extends DHttp_TestBase
 {
 
     /**

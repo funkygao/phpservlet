@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class KHttp_Exception_Captcha_Test extends KxTestCaseBase
+class KHttp_Exception_Captcha_Test extends DHttp_TestBase
 {
 
     public function testCaptchaIsWrong()

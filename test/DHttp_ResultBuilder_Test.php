@@ -36,7 +36,7 @@ class IResultBuilderClassForTest implements DHttp_ResultBuilder
 
 }
 
-class DHttp_ResultBuilder_Test extends KxTestCaseBase
+class DHttp_ResultBuilder_Test extends DHttp_TestBase
 {
 
     public function testInheritance()

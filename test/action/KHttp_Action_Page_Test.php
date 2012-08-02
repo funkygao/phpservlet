@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class KHttp_Action_Page_Test extends KxTestCaseBase
+class KHttp_Action_Page_Test extends DHttp_TestBase
 {
 
     public function testTodo()

@@ -13,7 +13,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class DHttp_Response_Test extends KxTestCaseBase
+class DHttp_Response_Test extends DHttp_TestBase
 {
 
     public function testDeclaredConstants()

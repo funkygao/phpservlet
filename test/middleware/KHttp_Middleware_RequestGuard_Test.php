@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class KHttp_Middleware_RequestGuard_Test extends KxTestCaseBase
+class KHttp_Middleware_RequestGuard_Test extends DHttp_TestBase
 {
 
     /**

@@ -47,7 +47,7 @@ class MyActionForControllerTest extends DHttp_Action
     }
 }
 
-class DHttp_Controller_Test extends KxTestCaseBase implements DHttp_Constant
+class DHttp_Controller_Test extends DHttp_TestBase implements DHttp_Constant
 {
 
     /**

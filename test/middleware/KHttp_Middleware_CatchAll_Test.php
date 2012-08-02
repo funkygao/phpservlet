@@ -21,7 +21,7 @@ class MyActionForCatchAllTest extends DHttp_Action
     }
 }
 
-class KHttp_Middleware_CatchAll_Test extends KxTestCaseBase
+class KHttp_Middleware_CatchAll_Test extends DHttp_TestBase
 {
 
     /**

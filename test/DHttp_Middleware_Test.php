@@ -56,7 +56,7 @@ class MyMiddlewareForForwardTest extends DHttp_Middleware
     }
 }
 
-class DHttp_Middleware_Test extends KxTestCaseBase
+class DHttp_Middleware_Test extends DHttp_TestBase
 {
 
     /**

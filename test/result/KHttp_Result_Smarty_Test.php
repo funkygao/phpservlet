@@ -44,7 +44,7 @@ class MyActionForSmartyTest extends DHttp_Action
 
 }
 
-class KHttp_Result_Smarty_Test extends KxTestCaseBase
+class KHttp_Result_Smarty_Test extends DHttp_TestBase
 {
 
     /**

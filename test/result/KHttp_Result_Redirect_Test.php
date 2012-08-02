@@ -22,7 +22,7 @@ class MyActionForRedirectTest extends DHttp_Action
 
 }
 
-class KHttp_Result_Redirect_Test extends KxTestCaseBase
+class KHttp_Result_Redirect_Test extends DHttp_TestBase
 {
 
     public function testExecute()

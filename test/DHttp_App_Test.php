@@ -54,7 +54,7 @@ class MyActionForAppTest extends DHttp_Action
     }
 }
 
-class DHttp_App_Test extends KxTestCaseBase implements DHttp_Result
+class DHttp_App_Test extends DHttp_TestBase implements DHttp_Result
 {
 
     /**

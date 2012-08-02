@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class KHttp_Exception_InvalidConfig_Test extends KxTestCaseBase
+class KHttp_Exception_InvalidConfig_Test extends DHttp_TestBase
 {
 
     private $code = 19;

@@ -28,7 +28,7 @@ class MyActionForJsonTest extends DHttp_Action
 
 }
 
-class KHttp_Result_Json_Test extends KxTestCaseBase
+class KHttp_Result_Json_Test extends DHttp_TestBase
 {
 
     public function testExecute()

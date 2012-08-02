@@ -34,7 +34,7 @@ class MyActionForResolverTest extends KHttp_Action_Base
 
 }
 
-class DHttp_ResultResolver_Test extends KxTestCaseBase
+class DHttp_ResultResolver_Test extends DHttp_TestBase
 {
 
     /**

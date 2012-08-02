@@ -36,7 +36,7 @@ class ActionForActionBaseTest extends KHttp_Action_Base
 
 }
 
-class KHttp_Action_Base_Test extends KxTestCaseBase
+class KHttp_Action_Base_Test extends DHttp_TestBase
 {
 
     /**

@@ -2,7 +2,7 @@
 /**
  * 所有单元测试的父类.
  *
- * End programmers just include this file once and extends KxTestCaseBase to
+ * End programmers just include this file once and extends DHttp_TestBase to
  * write unit test cases.
  *
  * @category test

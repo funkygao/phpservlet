@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class KHttp_Config_Default_Test extends KxTestCaseBase
+class KHttp_Config_Default_Test extends DHttp_TestBase
 {
 
     /**

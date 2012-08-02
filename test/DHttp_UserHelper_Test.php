@@ -15,7 +15,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class DHttp_UserHelper_Test extends KxTestCaseBase implements DHttp_Constant
+class DHttp_UserHelper_Test extends DHttp_TestBase implements DHttp_Constant
 {
 
     /**

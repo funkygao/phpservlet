@@ -12,7 +12,7 @@
 
 require_once('DHttp_TestBase.php');
 
-class DHttp_Exception_Test extends KxTestCaseBase
+class DHttp_Exception_Test extends DHttp_TestBase
 {
 
     public function testToString()
