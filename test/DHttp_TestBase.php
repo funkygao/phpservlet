@@ -12,6 +12,9 @@
  *
  * vim: set sw=4 ts=4 et:
  */
+
+require_once dirname(__FILE__) . '/../main/bootstrap.php';
+
 abstract class DHttp_TestBase extends PHPUnit_Framework_TestCase
 {
 
