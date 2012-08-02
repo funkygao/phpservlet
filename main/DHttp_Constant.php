@@ -150,4 +150,32 @@ interface DHttp_Constant
         STAR_PERSON = 1, // 名人
         STAR_ORG = 2; // 机构
 
+    /**
+     * 一分钟有多少秒.
+     */
+    const SECONDS_IN_MINUTE = 60;
+
+    /**
+     * 一小时有多少秒.
+     */
+    const SECONDS_IN_HOUR = 3600;
+
+    /**
+     * 一天有多少秒.
+     *
+     */
+    const SECONDS_IN_DAY = 86400;
+
+    /**
+     * 一周有多少秒.
+     */
+    const SECONDS_IN_WEEK = 604800;
+
+    /**
+     * 一年有多少秒.
+     *
+     * 按365天计算
+     */
+    const SECONDS_IN_YEAR = 31536000;
+
 }
