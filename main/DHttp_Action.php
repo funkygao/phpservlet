@@ -17,7 +17,7 @@
  *
  * @todo remove the deprecated
  */
-abstract class DHttp_Action implements DHttp_Result, DHttp_Constant
+abstract class DHttp_Action implements DHttp_Constant
 {
 
     /**

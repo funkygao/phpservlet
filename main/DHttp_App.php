@@ -72,7 +72,7 @@
  * </pre>
  *
  * 它本身也是一个中间件，只是这个中间件做的是负责启动程序员定义的符合本规范
- * 的页面应用，并负责根据{@link DHttp_Result}输出页面结果
+ * 的页面应用
  *
  * @category http
  * @package http

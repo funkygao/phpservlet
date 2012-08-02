@@ -22,7 +22,7 @@
  * @todo ×Ô¶¯¼ÆËãmodule name, convention over configuration
  *
  */
-abstract class DHttp_Config implements DHttp_Result
+abstract class DHttp_Config
 {
 
     const
@@ -110,19 +110,19 @@ abstract class DHttp_Config implements DHttp_Result
         self::RESULT_GLOBAL_INVALID_PARAM =>
         array(
             self::MAP_VALUE  => 'invalidParam.html',
-            self::MAP_TYPE   => self::TYPE_SMARTY
+            self::MAP_TYPE   => 'smarty'
         ),
 
         self::RESULT_GLOBAL_DATAERROR     =>
         array(
             self::MAP_VALUE  => 'dataError.html',
-            self::MAP_TYPE   => self::TYPE_SMARTY
+            self::MAP_TYPE   => 'smarty'
         ),
 
         self::RESULT_GLOBAL_LOGIN         =>
         array(
             self::MAP_VALUE  => '/login.php',
-            self::MAP_TYPE   => self::TYPE_REDIRECT
+            self::MAP_TYPE   => 'redirect'
         ),
 
     );

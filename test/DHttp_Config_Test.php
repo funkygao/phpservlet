@@ -129,60 +129,6 @@ class DHttp_Config_Test extends DHttp_TestBase
         $this->assertEquals('repaste/detail', $this->config->getModule());
     }
 
-    public function testMapResult()
-    {
-        $this->assertInstanceOf('DHttp_Config', $this->config->mapResult('name', DHttp_Result::TYPE_SMARTY, 'xx/a.html'));
-        $this->assertEquals(
-            array(
-                'xx/a.html',
-                'smarty'
-            ),
-            $this->config->getResultConfiguration('name')
-        );
-
-        $this->config->mapResult('fail', DHttp_Result::TYPE_JSON, 'http/fail.html');
-        $this->assertEquals(
-            array(
-                'http/fail.html',
-                'json'
-            ),
-            $this->config->getResultConfiguration('fail')
-        );
-
-        // test duplicate result name
-        $this->config->mapResult('fail', DHttp_Result::TYPE_SMARTY, 'blah.tpl');
-        list($value, $type) = $this->config->getResultConfiguration('fail');
-        $this->assertEquals('blah.tpl', $value);
-        $this->assertEquals('smarty', $type);
-    }
-
-    public function testGlobalMapResult()
-    {
-        $this->assertEquals(
-            array(
-                'dataError.html',
-                'smarty',
-            ),
-            $this->config->getResultConfiguration(DHttp_Result::RESULT_GLOBAL_DATAERROR)
-        );
-
-        $this->assertEquals(
-            array(
-                'invalidParam.html',
-                'smarty',
-            ),
-            $this->config->getResultConfiguration(DHttp_Result::RESULT_GLOBAL_INVALID_PARAM)
-        );
-
-        $this->assertEquals(
-            array(
-                '/login.php',
-                'redirect',
-            ),
-            $this->config->getResultConfiguration(DHttp_Result::RESULT_GLOBAL_LOGIN)
-        );
-    }
-
     public function testInvalidResultConfiguration()
     {
         list($value, $type) = $this->config->getResultConfiguration('non-exist-map');
@@ -201,7 +147,6 @@ class DHttp_Config_Test extends DHttp_TestBase
         $this->assertInstanceOf('DHttp_Config', $this->config->setMode('dev'));
         $this->assertInstanceOf('DHttp_Config', $this->config->setActionClass('foo'));
         $this->assertInstanceOf('DHttp_Config', $this->config->setActionMethod('bar'));
-        $this->assertInstanceOf('DHttp_Config', $this->config->mapResult('foo', DHttp_Result::TYPE_SMARTY, 'bar'));
     }
 
     public function testRedirect()

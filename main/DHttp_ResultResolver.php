@@ -25,7 +25,7 @@
  *
  * vim: set sw=4 ts=4 et:
  */
-class DHttp_ResultResolver implements DHttp_Result
+class DHttp_ResultResolver
 {
 
     /**
@@ -63,7 +63,7 @@ class DHttp_ResultResolver implements DHttp_Result
      */
     public function resolve()
     {
-        if (self::RESULT_NONE === $this->_resultName || is_null($this->_resultName))
+        if ('none' === $this->_resultName || is_null($this->_resultName))
         {
             // 不用我来生成其最终的结果了，它自己负责echo
             return '';
