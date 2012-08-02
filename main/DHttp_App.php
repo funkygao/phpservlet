@@ -91,10 +91,10 @@ class DHttp_App implements DHttp_IMiddleware, DHttp_Constant
 {
 
     const
-        HOOK_BEFORE = 'kx.before',
-        HOOK_BEFORE_DISPATCH = 'kx.before.dispatch',
-        HOOK_AFTER_DISPATCH = 'kx.after.dispatch',
-        HOOK_AFTER = 'kx.after';
+        HOOK_BEFORE = 'before',
+        HOOK_BEFORE_DISPATCH = 'before.dispatch',
+        HOOK_AFTER_DISPATCH = 'after.dispatch',
+        HOOK_AFTER = 'after';
 
     /**
      * @var DHttp_Controller
@@ -541,7 +541,7 @@ class DHttp_App implements DHttp_IMiddleware, DHttp_Constant
             return;
         }
 
-        include_once(dirname(__FILE__) . '/../base/annotation/annotations.php');
+        include_once(dirname(__FILE__) . '/base/annotation/annotations.php');
         $fileLoaded = true;
     }
 
